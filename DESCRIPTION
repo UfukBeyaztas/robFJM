@@ -1,0 +1,48 @@
+Package: robFJM
+Type: Package
+Title: Robust Functional Joint Models
+Version: 1.0.0
+Authors@R: c(
+    person("Ufuk", "Beyaztas",
+      email = "ufuk.beyaztas@marmara.edu.tr",
+      role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0000-0002-5208-4950")),
+    person("Nuriye", "Sancar",
+      role = "aut",
+      comment = c(ORCID = "0000-0002-4276-4653")),
+    person("Beste Hamiye", "Beyaztas",
+      role = "aut",
+      comment = c(ORCID = "0000-0002-6266-6487")),
+    person("Deniz", "Inan",
+      role = "aut",
+      comment = c(ORCID = "0000-0002-0408-1309")),
+    person("Boran", "Sekeroglu",
+      role = "aut")
+  )
+Description: Functions for fitting robust functional joint models for
+    longitudinal scalar responses, time-to-event outcomes, and functional
+    predictors. The package implements the proposed two-stage robust estimation
+    framework based on robust functional principal component analysis and
+    Student-t adjusted profile h-likelihood estimation. Functional predictors
+    entering the longitudinal and survival submodels are first represented by
+    robust functional principal component scores, reducing the influence of
+    atypical curves and functional artifacts. Conditional on these robust
+    scores, the joint model is fitted through an adjusted profile h-likelihood
+    approach with Student-t longitudinal errors, observation-specific
+    downweighting, Weibull baseline hazard, shared random effects, numerical
+    quadrature for survival integrals, and reconstruction of the longitudinal
+    and survival functional coefficient functions. The package also includes
+    simulation tools for generating clean and contaminated functional joint
+    model data.
+Depends: R (>= 3.5.0)
+Imports:
+    expm,
+    fda,
+    pcaPP,
+    stats,
+    survival
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+RoxygenNote: 7.1.2

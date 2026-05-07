@@ -1,0 +1,19 @@
+export(add_scores)
+export(fit_FAPHL)
+export(process_rfpca)
+export(simulate_data)
+
+importFrom(expm, sqrtm)
+
+importFrom(fda, create.bspline.basis, fd, eval.basis, eval.fd,
+           inprod, smooth.basisPar)
+
+importFrom(pcaPP, covPCAproj, l1median, PCAproj)
+
+importFrom(stats, coef, integrate, lm, model.matrix,
+           resid, residuals, rbinom, rnorm, runif, sd,
+           uniroot)
+
+importFrom(survival, Surv, survreg)
+
+importFrom(utils, head, tail)
